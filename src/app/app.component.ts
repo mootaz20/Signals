@@ -9,7 +9,6 @@ export class AppComponent {
   title = 'test2';
   counter = signal(0);
   msg = signal<string[]>([]);
-  division = computed(()=> this.counter() / 2);
   double = computed(()=> this.counter() * 2);
 
   increment(){
